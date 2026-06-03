@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódico Digital</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+    <h1>Mi periódico digital</h1>
+</header>
+
+<button id="menuToggle" class="hamburger-btn" aria-label="Abrir menú de secciones">☰</button>
+<button id="themeToggle">🌙</button>
+<nav id="sectionMenu" class="section-menu" aria-label="Menú de secciones">
+    <div class="section-menu-header">
+        <span>Secciones</span>
+        <button id="closeMenu" class="close-menu" aria-label="Cerrar menú">✕</button>
+    </div>
+    <ul>
+        <li onclick="abrirSeccion('inicio')">Inicio</li>
+        <li onclick="abrirSeccion('noticias')">Noticias</li>
+        <li onclick="abrirSeccion('musica')">Música</li>
+        <li onclick="abrirSeccion('moda')">Moda</li>
+        <li onclick="abrirSeccion('comida')">Comida</li>
+        <li onclick="abrirSeccion('tecnologia')">Tecnología</li>
+        <li onclick="abrirSeccion('deportes')">Deportes</li>
+        <li onclick="abrirSeccion('juegos')">Juegos</li>
+    </ul>
+</nav>
+
+<main>
+
+<!-- 🏠 INICIO (SIMPLIFICADO) -->
+<section id="inicio" class="seccion activa">
+    <div class="noticia-grande">
+        <img id="inicioImg" src="https://picsum.photos/seed/paisaje1/800/400" alt="Paisaje rotativo">
+        <h2>Bienvenido</h2>
+        <p>Este es mi periódico digital.</p>
+    </div>
+</section>
+
+<!-- 📰 SECCIÓN NOTICIAS -->
+ <section id="noticias" class="seccion">
+    <!-- BLOQUE DE NOTICIA 1 -->
+     <div class="fila-noticias">
+        <div class="lado lado-izq">
+            <article>
+                <img src="jus.avif" alt="Info extra">
+                <h3>Contexto del evento</h3>
+                <p>En el corazón de la capital, el evento reunió a miles de personas en un ambiente festivo con accesos especiales y medidas de seguridad.</p>
+                <p>Los organizadores destacaron la colaboración con instituciones culturales y el uso de espacios públicos para promover actividades familiares.</p>
+                <p>Las actividades incluyeron talleres gratuitos, presentaciones de talento local y una zona especial para niños.</p>
+                <p class="fuente">Fuente: El Universal</p>
+            </article>
+        </div>
+
+        <div class="columna-principal">
+            <div class="noticia-grande">
+                <img src="pu.jpg" alt="Noticia Principal">
+                <h2>Noticia Principal: 31 Minutos</h2>
+                <p>Información importante del día sobre el magno evento en el Zócalo.</p>
+                <p>El cierre incluyó presentaciones en vivo, arte urbano y mensajes de unidad que emocionaron a la audiencia.</p>
+                <p>Las autoridades esperan que este tipo de actividades fortalezcan el turismo cultural y generen un impacto positivo en la economía local.</p>
+                <p>La programación también estuvo pensada para promover expresiones artísticas diversas y apoyar nuevos talentos.</p>
+                <p class="fuente">Fuente: Yahoo Noticias</p>
+            </div>
+        </div>
+
+        <div class="lado lado-der">
+            <article>
+                <div class="contenedor-video">
+                    <iframe src="https://www.youtube.com/embed/PEuBMoi5Nq4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Video del show</h3>
+                <p>El espectáculo fue organizado por la Secretaría de Cultura capitalina y mostró una producción audiovisual de primer nivel.</p>
+                <p>El clip destaca el diseño de iluminación y la respuesta entusiasta de los asistentes tras cada presentación.</p>
+                <p>Además, se observa el montaje escénico y la coordinación entre músicos, bailarines y equipo técnico.</p>
+                <p class="fuente">Fuente: @larazon_mx</p>
+            </article>
+        </div>
+    </div>
+    <hr class="divisor">
+            <!-- BLOQUE DE NOTICIA 2 (Actualizado) -->
+             <div class="fila-noticias">
+                <div class="lado lado-izq">
+                    <article>
+                        <img src="NIÑO.jpg" alt="CLIMATICO">
+                        <h3>Informe: Super Niño</h3>
+                        <p>El Niño ha aumentado en intensidad durante las últimas semanas y pone en alerta a las zonas costeras y agrícolas.</p>
+                        <p>Expertos señalan que un monitoreo constante permitirá anticipar crecidas de ríos y proteger cultivos clave.</p>
+                        <p>Los productores locales ya estudian medidas para enfrentar inundaciones y proteger la siembra.</p>
+                    </article>
+                </div>
+
+                <div class="columna-principal">
+                    <div class="noticia-grande">
+                        <img src="NIÑIN.webp" alt="COMPARACION DE CLIMA">
+                        <h2>Segunda noticia: El cambio climático</h2>
+                        <p>El cambio climático es un fenómeno que afecta a la vida en todo el planeta. La temperatura ha aumentado en los últimos años, lo que ha provocado cambios en la distribución de los organismos y la forma en que vivimos.</p>
+                        <p>Este fenómeno también impacta a la agricultura, los ecosistemas y el consumo energético en muchas comunidades.</p>
+                        <p>Se propone un enfoque regional para mitigar el impacto y adaptar comunidades al nuevo clima.</p>
+                        <p>Los especialistas indican que la educación ambiental y la inversión en infraestructura son clave para reducir riesgos.</p>
+                        <p class="fuente">Fuente: NASA</p>
+                    </div>
+                </div>
+
+                <div class="lado lado-der">
+                    <article>
+                        <div class="contenedor-video">
+                            <iframe src="https://www.youtube.com/embed/Iw6hK7TQ9mU" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <h3>Video: reportaje del Super Niño</h3>
+                        <p>El informe muestra cómo el fenómeno climatológico cambia patrones de lluvia y temperatura a lo largo de la región.</p>
+                        <p>Incluye testimonios de comunidades costeras que se preparan para proteger viviendas y actividades económicas.</p>
+                        <p>También aborda cómo las autoridades coordinan planes de emergencia y apoyo comunitario.</p>
+                    </article>
+                </div>
+            </div>
+ </section>
+
+<!-- 🧠 MÚSICA -->
+<section id="musica" class="seccion">
+
+    <!-- 🧠 BLOQUE 1 (CORREGIDO COMO EL DE ABAJO) -->
+    <div class="fila-noticias">
+        <div class="lado lado-izq">
+            <article>
+                <img src="bis.avif" alt="Big">
+                <h3>Contexto del evento</h3>
+                <p>La movilización del 19 de enero se centró en exigir precios justos y mayor transparencia en la venta de boletos.</p>
+                <p>Los organizadores también llevaron campañas sociales para ayudar a jóvenes de escasos recursos a asistir al concierto.</p>
+                <p>La iniciativa se presentó como una muestra de apoyo comunitario y responsabilidad social en la industria musical.</p>
+            </article>
+        </div>
+
+        <div class="columna-principal">
+            <div class="noticia-grande">
+                <img src="bts.jpg" alt="BTS">
+                <h2>Estreno: BTS</h2>
+                <p>BTS visita el Palacio Presidencial de México y convoca a miles de seguidores en un evento histórico.</p>
+                <p>El espectáculo incluyó producciones audiovisuales, coreografías en vivo y una presentación especial para el público mexicano.</p>
+                <p>Muchos seguidores valoraron el mensaje de inclusión presente en la escenografía y en las letras.</p>
+                <p>La actuación también sirvió para consolidar la conexión del grupo con sus fans latinoamericanos.</p>
+                <p class="fuente">Fuente: Music News</p>
+            </div>
+        </div>
+
+        <div class="lado lado-der">
+            <article>
+                <div class="contenedor-video">
+                    <iframe src="https://www.youtube.com/embed/bg5umybIXWg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>BTS en concierto</h3>
+                <p>El video muestra parte de la energía del show y la reacción masiva de los asistentes.</p>
+                <p>Además, se aprecia el montaje del escenario y los momentos de interacción del grupo con el público.</p>
+                <p>La producción combina visuales impactantes y una puesta en escena que refuerza el mensaje del evento.</p>
+            </article>
+        </div>
+    </div>
+
+    <hr class="divisor">
+
+    <!-- 🧠 BLOQUE 2 (YA ESTABA BIEN) -->
+    <div class="fila-noticias">
+        <div class="lado lado-izq">
+            <article>
+                <img src="ki.jpg" alt="Kiiara">
+                <h3>Novedades del pop</h3>
+                <p>La escena musical sigue innovando con fusiones entre artistas latinoamericanos y estrellas del pop global.</p>
+                <p>Los nuevos lanzamientos están apostando por letras conscientes y producciones colaborativas que cruzan fronteras.</p>
+                <p>Este movimiento impulsa nuevas plataformas y shows especiales para artistas emergentes.</p>
+            </article>
+        </div>
+
+        <div class="columna-principal">
+            <div class="noticia-grande">
+                <img src="jp.webp" alt="J-Pop">
+                <h2>Colaboración internacional</h2>
+                <p>Fusión de estilos musicales entre diferentes culturas que expande el alcance del pop contemporáneo.</p>
+                <p>El proyecto combina ritmos electrónicos, letras emotivas y una producción visual que se ha convertido en tendencia.</p>
+                <p>La colaboración también ha generado expectativa por posibles conciertos y giras internacionales.</p>
+                <p>Los críticos resaltan la capacidad del tema para conectar con audiencias de distintos países.</p>
+                <p class="fuente">Fuente: Global Beats</p>
+            </div>
+        </div>
+
+        <div class="lado lado-der">
+            <article>
+                <div class="contenedor-video">
+                    <iframe src="https://www.youtube.com/embed/DSXRnQmuYBI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3>Video destacado</h3>
+                <p>El estreno visual complementa la colaboración y destaca la propuesta creativa del tema.</p>
+                <p>La historia del video refuerza el mensaje del álbum y aporta una experiencia inmersiva al público.</p>
+                <p>Los visuales y la coreografía ofrecen un recorrido estético que acompaña la letra del tema.</p>
+            </article>
+        </div>
+    </div>
+
+</section>
+<section id="moda" class="seccion">
+        <!-- MODA: contenido específico -->
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <img src="is.webp" alt="Detalles de telas">
+                    <h3>Materiales sostenibles</h3>
+                    <p>Las telas ecológicas ganan terreno en las nuevas colecciones y aportan un acabado más natural.</p>
+                    <p>Los diseñadores buscan reducir el desperdicio con prendas multifuncionales y procesos de producción más limpios.</p>
+                    <p>Hoy se apuesta por tejidos reciclados y tintes menos agresivos con el medio ambiente.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="noticia-grande">
+                    <img src="ph.webp" alt="Pasarela de moda">
+                    <h2>Tendencias 2026: Pasarelas y moda sostenible</h2>
+                    <p>Las colecciones apuestan por materiales reciclados y siluetas cómodas. Diseñadores locales ganan protagonismo en las semanas de la moda.</p>
+                    <p>La propuesta incluye prendas versátiles, detalles artesanales y un enfoque en consumo responsable.</p>
+                    <p>Los expertos señalan que el uso de fibras recicladas marca una tendencia clave para 2026.</p>
+                    <p>El diseño responsable ya no es sólo una opción; se presenta como una estrategia de largo plazo en las marcas.</p>
+                    <p class="fuente">Fuente: Vogue Local</p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/CEoj-ZwQUak" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Resumen visual</h3>
+                    <p>Lo más destacado de pasarelas y presentaciones de diseñadores emergentes.</p>
+                    <p>El material audiovisual resalta las texturas, los cortes y la armonía estética de cada propuesta.</p>
+                </article>
+            </div>
+        </div>
+        
+        <hr class="divisor">
+        <!-- BLOQUE ADICIONAL MODA -->
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <img src="pa.webp" alt="Atelier">
+                    <h3>Perfil del atelier</h3>
+                    <p>Conoce al equipo creativo detrás de la colección y su compromiso con la producción ética.</p>
+                    <p>El atelier trabaja con proveedores locales para apoyar comunidades y garantizar trazabilidad en cada prenda.</p>
+                    <p>La colaboración entre artesanos y diseñadores da como resultado prendas con identidad y valores claros.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="noticia-grande">
+                    <img src="dis.webp" alt="Diseñador emergente">
+                    <h2>Diseñador emergente: colección urbana</h2>
+                    <p>La nueva colección mezcla prendas utilitarias con estampados inspirados en la arquitectura local.</p>
+                    <p>La propuesta se distingue por cortes audaces y detalles funcionales que hablan de la ciudad.</p>
+                    <p>La colección urbana mezcla funcionalidad con referencias arquitectónicas de la ciudad.</p>
+                    <p>El resultado es una propuesta fresca que combina moda con mensaje cultural y práctico.</p>
+                    <p class="fuente">Fuente: Trend Report</p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/0sOIcy4OV9g" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Making of</h3>
+                    <p>Proceso de creación y backstage de la sesión fotográfica que da vida a la colección.</p>
+                    <p>El video revela las ideas iniciales, los ajustes de estilo y el ambiente de trabajo creativo en el estudio.</p>
+                    <p>También se muestran las pruebas de iluminación y los detalles que hacen que cada imagen sea única.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="comida" class="seccion">
+        <!-- COMIDA: contenido específico -->
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <img src="pl.webp" alt="Ingredientes frescos">
+                    <h3>Mercado local</h3>
+                    <p>Recomendaciones de mercados para comprar ingredientes frescos y de temporada con sabor auténtico.</p>
+                    <p>También se incluyen consejos para elegir productos orgánicos y apoyar a pequeños productores locales.</p>
+                    <p>Conocer al vendedor y preguntar sobre los cultivos ayuda a elegir mejor y reducir el desperdicio alimentario.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="noticia-grande">
+                    <img src="ta.webp" alt="Plato destacado">
+                    <h2>Receta del día: tacos gourmet con sabor local</h2>
+                    <p>Una receta fácil que combina ingredientes tradicionales con técnicas modernas para intensificar sabores.</p>
+                    <p>El resultado incluye salsas caseras, guisos sabrosos y una presentación que eleva la experiencia del taco.</p>
+                    <p>Se recomienda preparar los ingredientes con anticipación para que los sabores se mezclen mejor.</p>
+                    <p>Las especias balanceadas y los acompañamientos frescos son clave para obtener un taco con personalidad.</p>
+                    <p class="fuente">Fuente: Sabores MX</p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/7uHT11gxdik" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Video paso a paso</h3>
+                    <p>Demostración corta para preparar los tacos con consejos prácticos de cocina.</p>
+                    <p>También enseña cómo combinar salsas y guarniciones para lograr una experiencia completa en cada bocado.</p>
+                    <p>El tutorial destaca pequeños detalles que hacen la diferencia en sabor y textura.</p>
+                </article>
+            </div>
+        </div>
+        
+        <hr class="divisor">
+        <!-- BLOQUE ADICIONAL COMIDA -->
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <img src="ca.webp" alt="Pastelería">
+                    <h3>Ruta de cafés</h3>
+                    <p>Selección de cafeterías que ofrecen maridajes ideales para acompañar postres.</p>
+                    <p>Incluye recomendaciones de bebidas especiales y sabores únicos que realzan cada propuesta dulce.</p>
+                    <p>También sugiere opciones para quienes buscan combinaciones suaves o más intensas según su paladar.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="noticia-grande">
+                    <img src="ar.webp" alt="Postre tradicional">
+                    <h2>Especial: postres tradicionales con giro moderno</h2>
+                    <p>Cocineros reinterpretan postres clásicos agregando técnicas modernas y presentaciones contemporáneas.</p>
+                    <p>El menú combina sabores típicos con toques creativos para darle un aire renovado a la tradición.</p>
+                    <p>Los chefs enfatizan la importancia de equilibrar dulce y ácido para mejorar cada presentación.</p>
+                    <p>La tendencia incluye texturas crujientes y toques frescos que contrastan con la dulzura original.</p>
+                    <p class="fuente">Fuente: Dulce y Salado</p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/p5nl9zD7_yk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Video de decoración</h3>
+                    <p>Técnicas rápidas para que los postres luzcan profesionales en casa.</p>
+                    <p>También sugiere herramientas de repostería casera que permiten lograr acabados limpios y elegantes.</p>
+                    <p>Verás cómo pequeños trucos pueden transformar una receta simple en un postre memorable.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="seccion">
+        <!-- TECNOLOGÍA: contenido específico -->
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <img src="ya.webp" alt="Gadgets">
+                    <h3>Reseña del mes</h3>
+                    <p>El nuevo dispositivo portátil destaca por su autonomía y perfecta integración con servicios en la nube.</p>
+                    <p>Además, su diseño ligero y sus capacidades de conectividad lo convierten en una opción ideal para profesionales móviles.</p>
+                    <p>Su batería de larga duración y su compatibilidad con aplicaciones de productividad lo hacen versátil para el trabajo remoto.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="noticia-grande">
+                    <img src="ia.webp" alt="Innovación tecnológica">
+                    <h2>Lanzamiento: nueva plataforma de IA para PYMES</h2>
+                    <p>La plataforma facilita automatización de tareas y análisis de datos para pequeñas empresas, con planes accesibles y herramientas sin código.</p>
+                    <p>Su enfoque permite optimizar ventas, operaciones y atención al cliente sin requerir un equipo técnico especializado.</p>
+                    <p>Los primeros usuarios destacan mejoras en eficiencia y una experiencia intuitiva que facilita el uso.</p>
+                    <p>La herramienta ofrece plantillas adaptadas a diferentes industrias y soporte para integrarse con servicios existentes.</p>
+                    <p class="fuente">Fuente: Tech Ahora</p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/VpHViekaaFI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Video de demo</h3>
+                    <p>Presentación técnica y ejemplos reales de uso para acelerar la digitalización.</p>
+                    <p>Se muestra cómo la plataforma reduce tareas manuales y mejora el seguimiento de resultados en tiempo real.</p>
+                    <p>El demo también resalta la interfaz y la facilidad para configurar flujos de trabajo personalizados.</p>
+                </article>
+            </div>
+        </div>
+        
+        <hr class="divisor">
+        <!-- BLOQUE ADICIONAL TECNOLOGÍA -->
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <img src="me.webp" alt="Sensores">
+                    <h3>Startups a seguir</h3>
+                    <p>Pequeñas empresas que llevan soluciones IoT y análisis predictivo a zonas rurales con alto impacto social.</p>
+                    <p>Sus propuestas buscan mejorar el uso del agua, la energía y los recursos en comunidades con acceso limitado a tecnología.</p>
+                    <p>También buscan capacitar a productores para interpretar datos y aumentar la eficiencia en sus operaciones.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="noticia-grande">
+                    <img src="ag.webp" alt="IA aplicada">
+                    <h2>Innovación: IA para agricultura inteligente</h2>
+                    <p>Proyectos que combinan sensores y modelos predictivos para optimizar riego y rendimiento de cultivos.</p>
+                    <p>El uso de datos en tiempo real ayuda a agricultores a tomar decisiones más precisas y sostenibles.</p>
+                    <p>Esto ayuda a productores y técnicos a tomar decisiones rápidas con base en información precisa.</p>
+                    <p>El sistema también permite detectar plagas, enfermedades y necesidades de nutrientes de manera temprana.</p>
+                    <p class="fuente">Fuente: AgroTech</p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/fd_uIHSHNu4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Caso de estudio</h3>
+                    <p>Implementación real y resultados medibles de una solución de agricultura inteligente.</p>
+                    <p>Presenta mejoras en rendimiento de cosechas, ahorro de agua y toma de decisiones basada en datos de campo.</p>
+                    <p>La experiencia documentada muestra cómo una comunidad mejoró su producción con tecnología accesible.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="deportes" class="seccion">
+        <!-- DEPORTES: contenido específico -->
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <img src="mp.webp" alt="Entrevista al jugador">
+                    <h3>Entrevista MVP</h3>
+                    <p>El jugador comparte su preparación física y mental para la final, así como su visión del partido.</p>
+                    <p>También detalla su rutina de recuperación y la forma en que mantiene el enfoque durante una temporada exigente.</p>
+                    <p>Además, comenta cómo trabaja con su equipo de entrenamiento para llegar en forma a los momentos decisivos.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="noticia-grande">
+                    <img src="fu.webp" alt="Evento deportivo">
+                    <h2>Resumen: final nacional de la liga</h2>
+                    <p>El equipo campeón se coronó tras una emocionante prórroga; análisis de tácticas y figuras clave del partido.</p>
+                    <p>El duelo dejó varias jugadas decisivas que marcaron el ritmo del encuentro hasta el último minuto.</p>
+                    <p>El análisis también incluye el papel del entrenador y la respuesta del plantel en momentos críticos.</p>
+                    <p>Los aficionados recuerdan las decisiones de cambio que cambiaron el rumbo del partido.</p>
+                    <p class="fuente">Fuente: Marca Deportes</p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/TPHKBnan238" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Mejores jugadas</h3>
+                    <p>Compilación de las acciones más espectaculares y los momentos que hicieron vibrar a la tribuna.</p>
+                    <p>Incluye jugadas clave que definieron el partido y cómo los jugadores ajustaron su estrategia en tiempo real.</p>
+                    <p>También se destaca la labor de los defensas y el portero en los momentos decisivos.</p>
+                </article>
+            </div>
+        </div>
+        
+        <hr class="divisor">
+        <!-- BLOQUE ADICIONAL DEPORTES -->
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <img src="mi.webp" alt="Estadísticas">
+                    <h3>Estadísticas clave</h3>
+                    <p>Datos y métricas que explican el rendimiento de los equipos durante la temporada y la final.</p>
+                    <p>Se resaltan los promedios de goles, recuperaciones y la efectividad en los tiros a puerta.</p>
+                    <p>También se muestra cómo los números respaldan la superioridad física de los equipos durante el torneo.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="noticia-grande">
+                    <img src="fu.webp" alt="Entrenamiento">
+                    <h2>Preparación: cómo llegaron los finalistas</h2>
+                    <p>Análisis del calendario de entrenamiento y estrategias que llevaron a ambos equipos a la final.</p>
+                    <p>La diferencia estuvo en la táctica defensiva, la rotación de jugadores y la gestión de la presión.</p>
+                    <p>Los especialistas creen que la preparación física y mental marcará la diferencia en el próximo campeonato.</p>
+                    <p>El seguimiento al desempeño individual y de grupo es parte de la clave que llevó al éxito.</p>
+                    <p class="fuente">Fuente: Entrena+ Deportes</p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/U5S4siH94G8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h3>Video tras la final</h3>
+                    <p>Reacciones y análisis de entrenadores y jugadores después del partido.</p>
+                    <p>También ofrece una mirada a los planes de recuperación y la preparación para la próxima temporada.</p>
+                    <p>El material revela cómo los equipos planean aprovechar el impulso positivo para futuros retos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎮 SECCIÓN JUEGOS -->
+    <section id="juegos" class="seccion">
+        <div class="fila-noticias">
+            <div class="lado lado-izq">
+                <article>
+                    <h3>Reglas del juego</h3>
+                    <p>Escoge un número del 1 al 10 y prueba tu intuición. El juego te dirá si acertaste y qué número se guardó en secreto.</p>
+                </article>
+            </div>
+
+            <div class="columna-principal">
+                <div class="juego">
+                    <h2>🎮 Adivina el número</h2>
+                    <p>Del 1 al 10</p>
+                    <input type="number" id="numero" min="1" max="10" step="1" placeholder="1-10">
+                    <button onclick="jugar()">Intentar</button>
+                    <p id="resultado"></p>
+                </div>
+            </div>
+
+            <div class="lado lado-der">
+                <article>
+                    <h3>Consejos rápidos</h3>
+                    <p>Prueba números diferentes y observa las respuestas del juego para acercarte al número secreto.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUDIO REAL -->
+    <audio id="audio"></audio>
+
+    <!-- 🎤 BOTÓN FLOTANTE "ESCUCHAR" -->
+    <button id="listenBtn" class="floating-listen-btn">
+        🎧 ¿Quieres<br>escuchar?
+    </button>
+
+    <!-- 🔥 REPRODUCTOR FLOTANTE -->
+    <div id="playerContainer" class="music-float-player hidden">
+        <button class="player-close-btn" id="closePlayer">✕</button>
+
+        <div class="mfp-left">
+            <div class="cover" id="cover">🎵</div>
+
+            <div>
+                <h3 id="title">Canción</h3>
+                <p id="artist">Artista</p>
+            </div>
+        </div>
+
+        <div class="mfp-controls">
+            <button id="prev">⏮</button>
+            <button id="play">▶</button>
+            <button id="next">⏭</button>
+            <button id="repeat">🔁</button>
+            <button id="list">📜</button>
+        </div>
+
+        <div class="mfp-progress" id="bar">
+            <div id="fill"></div>
+        </div>
+
+        <div class="mfp-time">
+            <span id="cur">0:00</span>
+            <span id="dur">0:00</span>
+        </div>
+    </div>
+
+    <!-- 🎧 LISTA FLOTANTE -->
+    <div id="playlistPanel" class="playlist hidden"></div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
